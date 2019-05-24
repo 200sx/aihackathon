@@ -101,7 +101,7 @@ def searchfun():
 
 
 
-		return render_template("person.html", api=result, details=Personal[name], res=result)
+		return render_template("person.html", api=result, details=Personal[name], res=pred_res)
 
 
 
