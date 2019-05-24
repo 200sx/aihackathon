@@ -80,7 +80,8 @@ def searchfun():
 		name = request.form[ 'user_id' ]
 
 		url = "https://el0yb5zcg9.execute-api.ap-southeast-2.amazonaws.com/default"
-		#payload={"data": "137,10232,55,1,2,1,0,1,44,0,5000,3,1,250,40,9.3333333,0.8"}
+
+		payload={"data": ID["name"]}
 
 		r = requests.post(url, data=json.dumps(payload))
 		result = r.json()
@@ -88,7 +89,7 @@ def searchfun():
 
 
 
-		return render_template("person.html", api=name )
+		return render_template("person.html", api=result, details=Personal["name"] )
 
 
 
