@@ -25,7 +25,7 @@ Personal = {
         "income": "$100 000+",
         "education": "Bachelors Degree",
         "city": "St Louis",
-        "postcode": "63108"
+        "postcode": "63108",
         "unit": "Class 2.14 Prep"
     },
     "19148": {
