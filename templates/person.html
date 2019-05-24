@@ -3,17 +3,27 @@
 {% block content %}
 <div class="container-fluid">
   <div class="row">
-    <div class="col-2 bg-dark h-100 text-white" style="min-height: 93vh" >
-      <p>
-        {{details.firstname}} {{details.lastname}} <br>
-        {{details.email}} <br>
-        {{details.age}} <br>
-        {{details.city}} <br>
+    <div class="col-4" >
+      <p></p>
 
-      </p>
+        <div class="card" style="width: 18rem;">
+
+        <img class="card-img-top" src="https://ts.accenture.com/sites/BrandSpace/Pages/downloads/artworks/images/greater_than_palettes/4_Accenture_Technology_dimensional.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">{{details.firstname}} {{details.lastname}} </h5>
+          <p class="card-text">Currently working through {{details.unit}}</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">{{details.email}}</li>
+          <li class="list-group-item">{{details.age}}</li>
+          <li class="list-group-item">{{details.city}} </li>
+        </ul>
+
+        </div>
+
     </div>
 
-    <div class="col-10">
+    <div class="col-12">
     
     </div>
 

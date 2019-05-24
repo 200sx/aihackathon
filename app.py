@@ -38,7 +38,8 @@ Personal = {
         "income": "$20 000- $30 000",
         "education": "Associate Degree",
         "city": "North Kansa City",
-        "postcode": 64116
+        "postcode": 64116,
+        "unit": "Class 2.14 Prep"
     },
     "19864": {
         "firstname": "Augustina",
@@ -50,7 +51,8 @@ Personal = {
         "income": "Unspecified",
         "education": "Associates Degree",
         "city": "St. Petersburg",
-        "postcode": 33716
+        "postcode": 33716,
+        "unit": "Class 2.14 Prep"
     }
 }
 
