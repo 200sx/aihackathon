@@ -2,10 +2,10 @@
 
 {% block content %}
 <div class="container-fluid">
+   <p></p>
   <div class="row">
     <div class="col-4" >
-      <p></p>
-
+     
         <div class="card border-dark  bg-dark text-white " style="width: 18rem;">
 
         <img class="card-img-top" src="https://ts.accenture.com/sites/BrandSpace/Pages/downloads/artworks/images/greater_than_palettes/4_Accenture_Technology_dimensional.png" alt="Card image cap">
@@ -24,12 +24,19 @@
     </div>
 
     <div class="col-8">
-
-      <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+      {% if pred_bool == 0 %}
+        <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
         <div class="card-body">
-          <h5 class="card-title">This person is </h5>
-          <p class="card-text">{{res}}</p>
+          <h5 class="card-title">Result</h5>
+          <p class="card-text">This person is on the path to {{res}}</p>
       </div>
+      {% else %}
+        <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Result</h5>
+          <p class="card-text">This person is on the path to {{res}}</p>
+      </div>
+      {% endif %}
     
     </div>
 

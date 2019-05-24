@@ -80,6 +80,8 @@ def apifunc():
 @app.route('/search', methods=('GET', 'POST') )
 def searchfun():
 	pred_res = ""
+	pred_int = 0
+
 	if request.method == 'POST':
 		name = request.form[ 'user_id' ]
 
@@ -95,13 +97,15 @@ def searchfun():
 		print(result)
 
 		if result < 0.5:
-			pred_res= "fail"
+			pred_res= "Failing."
+			pred_int = 0
 		else:
-			pred_res = "success"
+			pred_res = "Success."
+			pred_int = 1
 
 
 
-		return render_template("person.html", api=result, details=Personal[name], res=pred_res)
+		return render_template("person.html", api=result, details=Personal[name], res=pred_res, pred_bool=pred_int)
 
 
 
