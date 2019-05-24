@@ -8,14 +8,14 @@ import json
 app = Flask(__name__)
 
 ID = {
-    10124: "77,10124,72,1,2,0,0,0,45,0,40000,1,1,6,21,9.333333333,0",
-    19148: "137,19148,72,1,2,1,0,1,31,0,20000,4,1,250,21,10,0.6,1",
-    19864: "87,19864,4,4,1,0,0,0,31,0,0,4,1,250,6,4.666666667,0"
+    "10124": "77,10124,72,1,2,0,0,0,45,0,40000,1,1,6,21,9.333333333,0",
+    "19148": "137,19148,72,1,2,1,0,1,31,0,20000,4,1,250,21,10,0.6,1",
+    "19864": "87,19864,4,4,1,0,0,0,31,0,0,4,1,250,6,4.666666667,0"
 
 }
 
 Personal = {
-    10124: {
+    "10124": {
         "firstname": "Gamora",
         "lastname": "Mohegan",
         "email": "GaryJMohegan@gmail.com",
@@ -27,7 +27,7 @@ Personal = {
         "city": "St Louis",
         "postcode": "63108"
     },
-    19148: {
+    "19148": {
         "firstname": "Caroline",
         "lastname": "Ardist",
         "email": "CarolineJArdist@dayrep.com",
@@ -39,7 +39,7 @@ Personal = {
         "city": "North Kansa City",
         "postcode": 64116
     },
-    19864: {
+    "19864": {
         "firstname": "Augustina",
         "lastname": "Boles",
         "email": "AugustinaMBoles@einrot.com",
