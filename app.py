@@ -24,6 +24,12 @@ def apifunc():
 
 	return render_template("person.html", api=result )
 
+@app.route('/search', methods=('GET', 'POST') )
+def searchfun():
+	if request.method == 'POST':
+		name = request.form[ 'user_id' ]
+		return render_template("person.html", api=name )
+
 if __name__ == "__main__":
 	app.run(host="0.0.0.0", port=80)
 
