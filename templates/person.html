@@ -3,11 +3,14 @@
 {% block content %}
 <div class="container-fluid">
   <div class="row">
-    <div class="col-2 bg-dark h-100" style="min-height: 93vh" >
-      <br>
-      {{api}}
-      <br>
-      {{details.email}}
+    <div class="col-2 bg-dark h-100 text-white" style="min-height: 93vh" >
+      <p>
+        {{details.firstname}} {{details.lastname}} <br>
+        {{details.email}} <br>
+        {{details.age}} <br>
+        {{details.city}} <br>
+
+      </p>
     </div>
 
     <div class="col-10">
